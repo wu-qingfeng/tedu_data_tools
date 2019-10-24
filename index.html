@@ -59,6 +59,7 @@
 				text-decoration:none;
 			}
 			.network{
+				position:relative;
 				display:flex;
 				width:720px;
 				height:60px;
@@ -72,14 +73,20 @@
 				border-bottom:1px solid #ddd;
 				text-align:center; 
 			}
-			.dubble{
-				width:40px;
-				height:40px;
+			.animad{
+				width:5px;
+				height:5px;
 				background-color:#0ff;
 				border-radius:50%;    
 				/*animation:move 2s linear 3 alternate both; */ 
-				animation:move 3s linear infinite;
+				
 			}
+			.p1{background-color:pink;animation:move 10s 0.5s linear infinite;position:absolute;}
+			.p2{animation:move 5s 1s linear infinite;position:absolute;}
+			.p3{background-color:blue;animation:move 3s 1.5s linear infinite;position:absolute;}
+			.p4{animation:move 7s 2s linear infinite;position:absolute;}
+			.p5{background-color:#ddd;animation:move 6s 2.5s linear infinite;position:absolute;}
+			.p6{background-color:#b306ee;animation:move 4s 3s linear infinite;position:absolute;}
 			.height300{height:300px; }
 			@keyframes move{
 				0%{
@@ -200,7 +207,12 @@
 			</div>
 		</div>
 		<div class='network height300'>
-			<p class="dubble" ></p>
+			<p class="animad p1" ></p>
+			<p class="animad p2" ></p>
+			<p class="animad p3" ></p>
+			<p class="animad p4" ></p>
+			<p class="animad p5" ></p>
+			<p class="animad p6" ></p>
 		</div>
 	</body>
 	<script src="js/index.js"></script>
